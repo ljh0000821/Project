@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+	/* Style the tab */
+.tab {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    width:980px;
+    height:60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+}
+
+/* Style the buttons inside the tab */
+.tablinks {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height:40px;
+    font-size: 17px;
+    text-align: left;
+    line-height: 40px;
+    margin-right: 83px;
+}
+
+/* Change background color of buttons on hover */
+.tablinks:hover {
+    color: #fee174;
+    border-bottom: 1px solid #fee174;
+}
+
+/* Create an active/current tablink class */
+.tablinks.active {
+    color: #feb627;
+    border-bottom: 1px solid #feb627;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    width:700px;
+}
+.main-box{
+	width:980px;
+	margin:0 auto;
+}
+		</style>
+	</head>
+	<body>
+		<div class="main-box">
+<div class="tab">
+  <div class="tablinks active" onclick="openCity(event, 'one')">QQ</div>
+  <div class="tablinks" onclick="openCity(event, 'two')">快手</div>
+  <div class="tablinks" onclick="openCity(event, 'three')">全民K歌</div>
+  <div class="tablinks" onclick="openCity(event, 'two')">抖音</div>
+  <div class="tablinks" onclick="openCity(event, 'two')">微视</div>
+  <div class="tablinks" onclick="openCity(event, 'two')">美拍</div>
+  <div class="tablinks" onclick="openCity(event, 'two')">火山</div>
+  <div class="tablinks" onclick="openCity(event, 'two')">小红书</div>
+</div>
+<div class="content-box">
+<div id="one" class="tabcontent" style="display: block;">
+  11111111
+</div>
+
+<div id="two" class="tabcontent">
+  22222222
+</div>
+
+<div id="three" class="tabcontent">
+  3333333
+</div>
+</div>
+</div>
+	</body>
+	<script>
+function openCity(evt, number) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(number).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+	</script>
+</html>

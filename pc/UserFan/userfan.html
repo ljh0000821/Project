@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户互粉</title>
+		<link rel="stylesheet" href="../../css/PC.css" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+	</head>
+	<body class="Userfan">
+		<header></header>
+		<div class="main">
+			<div class="userfan-main-text">
+				<div class="userfan-tab">
+				  <div class="userfan-tablinks active">QQ</div>
+				  <div class="userfan-tablinks">快手</div>
+				  <div class="userfan-tablinks">全民K歌</div>
+				  <div class="userfan-tablinks">抖音</div>
+				  <div class="userfan-tablinks">微视</div>
+				  <div class="userfan-tablinks">美拍</div>
+				  <div class="userfan-tablinks">火山</div>
+				  <div class="userfan-tablinks">小红书</div>
+				</div>
+				<div class="userfan-content-box">
+					<div class="userfan-tabcontent">
+						<div class="userfan-main-one">
+							<div class="userfan-praise-left">
+								<img src="../../img/tu1.jpg">
+							</div>
+							<div class="userfan-praise-right">
+								<div class="userfan-praise-name">刘德华</div><br>
+								<div class="userfan-praise-QQ">QQ号：123456789</div><br>
+								<div class="userfan-praise-text">我和我和购物和福建为放sdfshg的过来了数量的国际连锁酒店管理思路挂机了假哦我今儿佛我今儿哦估计我感觉教我减肥为福建沃尔夫奖我就而非就沃尔夫奖沃尔夫奖欧文金佛我今儿佛教网</div><br>
+								<div class="userfan-fen">未粉</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="userfan-main-btn">
+					<input type="button" value="我也要发布" class="userfan-btn-sure">
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<div class="suspension"></div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.js" ></script>
+	<script type="text/javascript" src="../../js/PC.js" ></script>
+	<script>
+		$(".userfan-tablinks").click(function(){
+    		$(".userfan-tablinks").eq($(this).index()).addClass("active").siblings().removeClass("active")
+  		});
+
+	</script>
+</html>

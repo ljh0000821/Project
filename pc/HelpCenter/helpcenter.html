@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>帮助中心</title>
+		<link rel="stylesheet" href="../../css/PC.css" />
+		<link rel="stylesheet" href="../../css/iconfont.css" />
+	</head>
+	<body class="Helpcenter">
+		<header></header>
+		<div class="main">
+			<div class="help-main-text">
+				<div class="help-tab">
+				    <div class="help-tablinks active">怎么涨粉？</div>
+				    <div class="help-tablinks">QQ说说赞多久生效？</div>
+				    <div class="help-tablinks">水电费水电费水电费是肯定会开始规划开始的感觉受到国家经济？</div>
+				</div>
+				<div class="help-content-box">
+					<div class="help-tabcontent">
+					  11111111<span class="iconfont icon-dianhua"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer></footer>
+		<div class="suspension"></div>
+	</body>
+	<script type="text/javascript" src="../../js/jquery.js" ></script>
+	<script type="text/javascript" src="../../js/PC.js" ></script>
+	<script>
+		$(".help-tablinks").click(function(){
+		    $(".help-tablinks").eq($(this).index()).addClass("active").siblings().removeClass("active")
+		});
+	</script>
+</html>
